@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://gitlab-gl.stackroute.in/manzoor.mehadi/jenkinsdemo1.git'
+                git 'https://github.com/manzoormehadi/GlobalLogicJenkins.git'
 
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
